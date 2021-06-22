@@ -1,0 +1,98 @@
+body {
+  background-color: #141414;
+}
+.nav__cont {
+  width: 100%;
+  margin: 0px;
+}
+.header__container {
+  width: 100vw;
+  height: 40vh;
+  background-color: #141414;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  padding-bottom: 30px;
+}
+.header__titulo {
+  font-size: 48px;
+  color: wheat;
+  font-weight: 700;
+  margin: 0px;
+  font-family: "Montserrat", sans-serif;
+}
+
+/*Tarjetas*/
+.cards__container {
+  background-color: #141414;
+  padding: 38px 0px;
+}
+.card {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: "Poppins", sans-serif;
+  margin-bottom: 60px;
+}
+.card:last-child {
+  margin-bottom: 0px;
+}
+.card__img {
+  width: 240px;
+  height: 170px;
+  border-radius: 5px;
+}
+.card__cont-text {
+  width: 80%;
+  text-align: center;
+  color: white;
+  margin-top: 15px;
+}
+.card__title {
+  font-size: 24px;
+  font-weight: 700;
+  margin: 0px 0px 10px 0px;
+}
+.card__text {
+  font-size: 16px;
+  margin: 0px 0px 16px 0px;
+}
+.card__link {
+  font-size: 24px;
+  font-weight: 700;
+  color: #fc6f50;
+  text-decoration: none;
+}
+
+@media (min-width: 900px) {
+  .header__container {
+    height: 100vh;
+    padding: 0px 80px;
+    justify-content: left;
+    align-items: center;
+    background-color: #000000;
+  }
+
+  .cards__container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 50px 180px;
+  }
+  .card {
+    margin: 0px;
+    justify-content: initial;
+  }
+  .card__cont-text {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+}
+@media (min-width: 1200px) {
+  .cards__container {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}

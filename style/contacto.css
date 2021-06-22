@@ -1,0 +1,8 @@
+.escribime__title {
+  display: none;
+}
+@media (min-width: 900px) {
+  .escribime__title {
+    display: flex;
+  }
+}

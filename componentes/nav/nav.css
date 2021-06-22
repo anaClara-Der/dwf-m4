@@ -1,0 +1,97 @@
+.nav__links {
+  display: none;
+}
+.nav {
+  width: 100%;
+  max-height: 30%;
+  background-color: #000000;
+  padding: 24px;
+  position: fixed;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: "Montserrat", sans-serif;
+}
+.nav__img {
+  max-width: 115px;
+  max-height: 48px;
+}
+/*Menu hamburguesa*/
+.nav__linea,
+.nav__linea-cerrar {
+  width: 36px;
+  height: 4px;
+  background-color: wheat;
+  margin: 7px 0;
+}
+/*Menu desplegable*/
+.nav__desplegable {
+  display: none;
+  background-color: #181515;
+  position: fixed;
+  width: 90%;
+  height: 90%;
+  right: 0;
+  font-family: "Montserrat", sans-serif;
+  margin-top: 20px;
+  transition: all 500ms ease;
+}
+/*Menu desplegable - la x que cierra*/
+.nav__container-cerrar {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+.nav__linea-cerrar {
+  position: absolute;
+  top: 30px;
+  right: 30px;
+}
+.nav__cerrar--dos {
+  transform: rotate(45deg);
+}
+.nav__cerrar--uno {
+  transform: rotate(-45deg);
+}
+/*Menu desplegable - opciones*/
+.nav__container-links {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+.nav__desplegable-link {
+  font-size: 48px;
+  margin: 0px 0px 58px 0px;
+  text-decoration: none;
+  color: #fafafa;
+  font-weight: 700;
+}
+
+/*Pantallas más grandes*/
+@media (min-width: 900px) {
+  .nav__burguer {
+    display: none;
+  }
+  .nav {
+    padding: 50px 80px;
+  }
+  .nav__img {
+    max-width: 197px;
+    max-height: 48px;
+  }
+  .nav__links {
+    display: inherit;
+  }
+  .nav__link {
+    margin: 0px 30px 0px 30px;
+    text-decoration: none;
+    color: wheat;
+    font-size: 24px;
+    transition: all 0.5s;
+  }
+  .nav__link:hover {
+    border-bottom: solid 1px rgba(16, 145, 16, 0.856);
+  }
+}

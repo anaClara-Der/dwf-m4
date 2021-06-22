@@ -1,0 +1,41 @@
+.present__container-text {
+  font-family: "Montserrat", sans-serif;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.present__title {
+  margin: 0px 0px 40px 0px;
+  font-size: 32px;
+  font-weight: 700;
+}
+.present__text {
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+}
+.present__img {
+  display: none;
+  width: 200px;
+  height: 250px;
+}
+
+@media (min-width: 900px) {
+  .present {
+    padding: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .present__img {
+    display: inherit;
+  }
+  .present__container-text {
+    padding: 0px;
+    width: 50%;
+    align-items: initial;
+    margin-left: 50px;
+  }
+}
